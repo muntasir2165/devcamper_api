@@ -50,7 +50,7 @@ ReviewSchema.post('save', function () {
   this.constructor.getAverageRating(this.bootcamp);
 });
 
-// Call getAverageRating before save
+// Call getAverageRating before remove
 ReviewSchema.pre('remove', function () {
   this.constructor.getAverageRating(this.bootcamp);
 });

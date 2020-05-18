@@ -67,7 +67,7 @@ app.use(limiter);
 // Prevent http param pollution
 app.use(hpp());
 
-// Set stati folder
+// Set static folder
 app.use(express.static(path.join(__dirname, 'public')));
 
 // Mount routers
