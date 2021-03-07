@@ -30,7 +30,7 @@ const reviews = require('./routes/reviews');
 
 const app = express();
 
-// Body parser
+// Body parser to parse request body as JSON
 app.use(express.json());
 
 // Cookie parser
